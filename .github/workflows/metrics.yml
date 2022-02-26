@@ -13,5 +13,3 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           repositories_affiliations: owner, collaborator
           plugin_achievements: true
-          plugin_achievements_ignored: stargazer, developer, forker, member, explorer, automater, infographile
-          name: Metrics
