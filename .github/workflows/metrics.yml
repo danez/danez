@@ -15,4 +15,4 @@ jobs:
           plugin_achievements: true
           plugin_achievements_ignored: forker, automator, follower, deployer
           plugin_achievements_display: compact
-          base: header, community, repositories, metadata
+          base: header, repositories, metadata
