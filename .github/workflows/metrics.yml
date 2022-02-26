@@ -1,0 +1,17 @@
+name: Metrics
+on:
+  schedule:
+    - cron: 42 0 * * *
+  push: {branches: ["main"]}
+  workflow_dispatch:
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          repositories_affiliations: owner, collaborator
+          plugin_achievements: true
+          plugin_achievements_ignored: stargazer, developer, forker, member, explorer, automater, infographile
+          name: Metrics
