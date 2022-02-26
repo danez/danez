@@ -13,3 +13,5 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           repositories_affiliations: owner, collaborator
           plugin_achievements: true
+          plugin_achievements_ignored: forker, automater
+          plugin_achievements_display: compact
