@@ -12,7 +12,6 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           repositories: 1000
-          repositories_affiliations: owner, collaborator
           plugin_achievements: true
           plugin_achievements_ignored: forker, automator, follower, deployer
           plugin_achievements_display: compact
