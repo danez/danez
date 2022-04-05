@@ -11,7 +11,6 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          debug: true
           repositories: 1000
           repositories_affiliations: owner, collaborator
           plugin_achievements: true
